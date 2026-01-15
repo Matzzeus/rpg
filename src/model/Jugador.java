@@ -14,8 +14,8 @@ public class Jugador {
         this.nombre = nombre;
         this.nickname = nickname;
         this.edad = edad;
-        this.oro = 100;
-        this.gemas = 10;
+        this.oro = 50;
+        this.gemas = 30;
 
     }
 
@@ -42,8 +42,31 @@ public class Jugador {
         this.gemas = gemas;
     }
 
-    public void setOro(int oro) {
+    public void setOro() {
         this.oro = oro;
     }
+
+    public void agregarOrgo(int cantidad){
+        if(cantidad >0){
+            gemas += cantidad;
+        }
+    }
+    public void agregarGemas(int cantidad){
+        if(cantidad >= 0){
+            oro += cantidad;
+        }
+    }
+
+    public boolean gastarGemas(int cantidad){
+        if (cantidad <= gemas ){
+            gemas -= cantidad;
+            return true;
+        }
+        return false;
+    }
+
+
+
+
 
 }
