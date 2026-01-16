@@ -38,13 +38,13 @@ public class Jugador {
         return gemas;
     }
 
-    public void setGemas(int gemas) {
+    /*public void setGemas(int gemas) {
         this.gemas = gemas;
     }
 
     public void setOro() {
         this.oro = oro;
-    }
+    }*/
 
     public void agregarOro(int cantidad){
         if(cantidad >0){
