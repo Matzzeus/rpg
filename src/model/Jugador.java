@@ -46,14 +46,14 @@ public class Jugador {
         this.oro = oro;
     }
 
-    public void agregarOrgo(int cantidad){
+    public void agregarOro(int cantidad){
         if(cantidad >0){
-            gemas += cantidad;
+            oro += cantidad;
         }
     }
     public void agregarGemas(int cantidad){
-        if(cantidad >= 0){
-            oro += cantidad;
+        if(cantidad > 0){
+            gemas += cantidad;
         }
     }
 
