@@ -5,19 +5,19 @@ import model.Jugador;
 import Util.ScannerUtils;
 
 public class RuletaService {
-    private Jugador jugador;
+    private Jugador jugadorRuleta;
     private  static final int COSTOGIRO =5;
 
     public RuletaService (Jugador jugadorRuleta){
-        this.jugador = jugadorRuleta;
+        this.jugadorRuleta = jugadorRuleta;
     }
 
     public void validarGemas(){
-        System.out.println("hola " + this.jugador.getNickname() + " para jugar se usara 5 GEMAS, TIENES: " +  this.jugador.getNickname() + " tienes " +this.jugador.getOro() +" monedas de oro" +"//  Tienes "+ jugador.getGemas() +" Gemas");
+        System.out.println("hola " + this.jugadorRuleta.getNickname() + " para jugar se usara 5 GEMAS, TIENES: " +  this.jugadorRuleta.getNickname() + " tienes " +this.jugadorRuleta.getOro() +" monedas de oro" +"//  Tienes "+ jugadorRuleta.getGemas() +" Gemas");
         System.out.println(" EL COSTO DE GIRARA LA RULETA ES: "+ COSTOGIRO+ "GEMAS");
 
 
-        if (jugador.getGemas() < COSTOGIRO){
+        if (jugadorRuleta.getGemas() < COSTOGIRO){
             System.out.println("te hace falta GEMAS para girara");
             return;
         }
@@ -27,7 +27,7 @@ public class RuletaService {
                 "SI/NO");
 
         if(respuesta.equalsIgnoreCase("SI")){
-            jugador.gastarGemas(COSTOGIRO);
+            jugadorRuleta.gastarGemas(COSTOGIRO);
             girarRuleta();
         }else{
             System.out.println("SALIENDO DE LA RULETA................");
@@ -40,22 +40,22 @@ public class RuletaService {
         int resultado = RandomUtils.numeroEntero(1,100);
 
         if (resultado <= 10){
-            jugador.agregarGemas(40);
+            jugadorRuleta.agregarGemas(40);
             System.out.println("FELICIDADES GANASTE 40 GEMAS");
         } else if (resultado <= 25){
-            jugador.agregarOro(75);
+            jugadorRuleta.agregarOro(75);
             System.out.println( "FELICIDADES GANASTE 75 MONEDAS DE ORO");
         }else if (resultado <= 30){
-            jugador.agregarGemas(1000);
+            jugadorRuleta.agregarGemas(1000);
             System.out.println("FELICIADES GANASTE 1,000 GEMAS");
         }else if (resultado <= 35){
-            jugador.agregarOro(2000);
+            jugadorRuleta.agregarOro(2000);
             System.out.println("FELICIDADES GANASTE 2,000 ORO");
         }else if (resultado <= 65){
-            jugador.agregarGemas(5);
+            jugadorRuleta.agregarGemas(5);
             System.out.println("FELICIDADES GANASTE 5 GEMAS");
         }else{
-         jugador.agregarOro(10);
+         jugadorRuleta.agregarOro(10);
          System.out.println("FELICIDADES GANASTE 10 MONEDAS DE ORO ");;
         }
 

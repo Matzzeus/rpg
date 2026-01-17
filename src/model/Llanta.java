@@ -5,4 +5,8 @@ public class Llanta {
     private int desgaste;
     private boolean pinchada;
 
+
+
+
+
 }
