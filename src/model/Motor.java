@@ -5,6 +5,7 @@ public class Motor {
     private double consumo;
     private boolean encendido;
     private int nivel;
+
     public Motor (){
         this.potencia = 10;
         this.consumo = 0;

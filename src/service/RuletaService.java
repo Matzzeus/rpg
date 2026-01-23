@@ -13,8 +13,8 @@ public class RuletaService {
     }
 
     public void validarGemas(){
-        System.out.println("hola " + this.jugadorRuleta.getNickname() + " para jugar se usara 5 GEMAS, TIENES: " +  this.jugadorRuleta.getNickname() + " tienes " +this.jugadorRuleta.getOro() +" monedas de oro" +"//  Tienes "+ jugadorRuleta.getGemas() +" Gemas");
-        System.out.println(" EL COSTO DE GIRARA LA RULETA ES: "+ COSTOGIRO+ "GEMAS");
+        System.out.println("hola " + jugadorRuleta.getNickname() + " para jugar se usara 5 GEMAS, TIENES: " + jugadorRuleta.getNickname() + " tienes " + jugadorRuleta.getOro() +" monedas de oro " +" //  Tienes "+ jugadorRuleta.getGemas() +" Gemas");
+        System.out.println(" EL COSTO DE GIRARA LA RULETA ES: "+ COSTOGIRO+ " GEMAS");
 
 
         if (jugadorRuleta.getGemas() < COSTOGIRO){

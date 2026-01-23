@@ -10,7 +10,7 @@ public class ScannerUtils {
     public static final Scanner SCANNER = new Scanner(System.in) ;
 
     public ScannerUtils (){
-        //no instanciar
+
     }
 
 
